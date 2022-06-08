@@ -1,0 +1,40 @@
+.footerSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.footerStyled ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.footerStyled ul li a {
+    text-decoration: none;
+}
+
+.footerStyled small {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.footerStyled small a {
+    text-decoration: none;
+}
+
+.footerStyled small a .logo {
+    margin-left: 5px;
+    font-size: 1.25em;
+    font-family: 'Nanum Pen Script', sans-serif;
+}

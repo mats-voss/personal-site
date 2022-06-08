@@ -1,0 +1,37 @@
+.main {
+  position: relative;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 'landing';
+}
+
+.main .backgroundDots {
+  inset: 0;
+  position: absolute;
+  z-index: -2;
+  --dot-size: 1px;
+  --dot-space: 22.15px;
+  --color-background: hsl(233, 13%, 14%);
+  --color-gray500: hsl(0, 0%, 50%);
+  background: linear-gradient(90deg,
+      var(--color-background) calc(var(--dot-space) - var(--dot-size)),
+      transparent 1%) center,
+    linear-gradient(var(--color-background) calc(var(--dot-space) - var(--dot-size)),
+      transparent 1%) center,
+    var(--color-gray500);
+  background-size: var(--dot-space) var(--dot-space);
+}
+
+.main .backgroundGradients {
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: radial-gradient(circle at 15% 50%,
+      rgba(220, 132, 255, 0.10),
+      transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(132, 255, 220, 0.10), transparent 25%);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}

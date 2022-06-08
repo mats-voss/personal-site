@@ -1,0 +1,32 @@
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    gap: .5em;
+}
+
+.links a {
+    padding: 0.5rem 0.75rem 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(233, 13%, 14%);
+    font-weight: bold;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 9999px;
+    opacity: 1;
+    transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a svg {
+    fill: hsl(233, 13%, 14%);
+    display: inline;
+    vertical-align: top;
+}
+
+.links a:hover{
+    transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0.85;
+}

@@ -1,0 +1,60 @@
+.LandingSection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    grid-area: landing;
+    display: grid;
+    grid-template-rows: max-content auto;
+}
+
+.LandingSection .Content {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0;
+}
+
+.LandingSection .Content .svg-graphic {
+  max-width: 100%;
+  max-width: 30rem;
+}
+
+/* HeroText */
+.HeroHeader {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.HeroHeader .Heading {
+    font-size: 6rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: .9;
+}
+
+.HeroHeader p {
+    font-size: 1.4rem;
+    margin: 0;
+    letter-spacing: -.0025em;
+}
+
+.HeroHeader .Heading .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.HeroHeader .Heading .emoji-wrapper {
+    width: max-content;
+    font-size: .75em;
+}
+
+.HeroHeader .SubHeading {
+    padding-left: .4rem;
+}

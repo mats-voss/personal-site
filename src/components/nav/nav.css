@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 4em;
+    position: static;
+    height: max-content;
+}
+
+/* ---- Name ---- */
+.navbar p{
+    font-family: 'Nanum Pen Script', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+/* ---- social media ---- */
+.navbar .social__links {
+    list-style: none;
+}
+
+.navbar .social__links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar .social__links li .icon {
+    color: white;
+    font-size: 25px;
+}
