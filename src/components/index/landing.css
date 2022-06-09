@@ -10,39 +10,73 @@
 
 .LandingSection .Content {
   width: 100%;
-  height: auto;
+  height: 100vh;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 0;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .LandingSection .Content .svg-graphic {
-  max-width: 100%;
-  max-width: 30rem;
+  width: min(80vw, 22.5em);
+}
+
+@media (min-width: 960px) {
+    .LandingSection .Content {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .LandingSection .Content .svg-graphic {
+        width: 100%;
+        max-width: 22.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .LandingSection .Content .svg-graphic {
+        max-width: 30rem;
+    }
 }
 
 /* HeroText */
-.HeroHeader {
-    display: block;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
-
-.HeroHeader .Heading {
-    font-size: 6rem;
+.HeroHeader h1 {
+    font-size: 4rem;
     font-weight: 800;
     margin: 0;
     line-height: .9;
 }
 
 .HeroHeader p {
-    font-size: 1.4rem;
+    font-size:0.935rem;
     margin: 0;
-    letter-spacing: -.0025em;
+    letter-spacing: -0.0025em;
 }
+
+@media (min-width: 960px) {
+    .HeroHeader h1 {
+        font-size: 5rem;
+    }
+
+    .HeroHeader p {
+        font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .HeroHeader h1 {
+        font-size: 6rem;
+    }
+
+    .HeroHeader p {
+        font-size: 1.4rem;
+    }
+}
+
 
 .HeroHeader .Heading .flex-container {
     display: flex;

@@ -1,8 +1,14 @@
 .navbar {
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2em 4em;
+    padding: 0em 2em;
     position: static;
     height: max-content;
 }
@@ -14,17 +20,41 @@
     font-size: 30px;
 }
 
+.navbar a {
+    text-decoration: none;
+}
+
+/* Text links */
+.navbar .text__links {
+    width: max-content;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .text__links .ul {
+    width: max-content;
+    display: flex;
+}
+
+.navbar .text__links li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
 /* ---- social media ---- */
 .navbar .social__links {
     list-style: none;
-}
-
-.navbar .social__links li {
-    display: inline-block;
-    margin: 0 10px;
+    display: flex;
+    gap: .755rem;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar .social__links li .icon {
     color: white;
-    font-size: 25px;
+    font-size: 1.5rem;
 }

@@ -1,8 +1,15 @@
 .links {
     display: flex;
-    flex-direction: row;
-    align-items: initial;
+    flex-direction: column-reverse;
+    align-items: stretch;
     gap: .5em;
+}
+
+@media (min-width: 320px) {
+    .links {
+        flex-direction: row;
+        align-items: initial;
+    }
 }
 
 .links a {
