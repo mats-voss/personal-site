@@ -8,7 +8,7 @@ import "./landing.css";
 const Landing = () => {
     return (
         <section className="LandingSection" id="landing">
-            <Nav siteTitle="<Mats>" siteLink={"https://github.com/mats-voss"} />
+            <Nav siteTitle="<Mats>" />
             <div className="Content">
                 <HeroText />
                 <SVGGraphic className="svg-graphic" />
