@@ -4,7 +4,12 @@
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: 'landing';
+  grid-template-areas:
+      'landing'
+      'about'
+      'projects'
+      'footer';
+  background-size: cover;
 }
 
 .main .backgroundDots {
