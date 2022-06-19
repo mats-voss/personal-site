@@ -1,0 +1,24 @@
+.timelineSection {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.timelineSection .Content {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 960px) {
+    .timelineSection .Content {
+        min-height: calc(100vh - 250px);
+    }
+}
+
+.timelineSection .Content article {
+    text-align: center;
+    padding: 0 2em;
+    line-height: 1.6;
+}
